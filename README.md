@@ -1,6 +1,6 @@
 # Web crawling -> Markdown (dnshine.co.kr sample)
 
-This folder contains `web-crewling.py`, a small site crawler that:
+This folder contains `web-crawling.py`, a small site crawler that:
 
 - Crawls a site (same-domain links only)
 - Downloads images and common document types (pdf, docx, xlsx, etc.) into `assets/`
@@ -25,8 +25,6 @@ pip install -r web-crawling/requirements.txt
 ```bash
 python web-crawling/web-crawling.py https://www.dnshine.co.kr/ -o python-files/output_dnshine -m 10
 ```
-
-Backward compatibility: an older file name `web-crewling.py` may still exist in this folder. Both names will work; `web-crawling.py` is the up-to-date script.
 
 Output:
 - Markdown files will be created under the output directory (default `site_markdown`) with `assets/` subfolder containing downloaded files.
